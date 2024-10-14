@@ -1,0 +1,41 @@
+.list{
+   margin-bottom: 10px;
+   li{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 10px 12px;
+
+
+      &.active{
+         background: #FFFFFF;
+         box-shadow: 2px 2px #08080814;
+      }
+
+        i{ 
+         display: flex;
+         margin-right: 10px;
+      }
+     
+      .badge{
+         width: 10px;
+         height: 10px;
+         border-radius: 50px;
+         position: relative;
+         left: 6px;
+         &--red{
+            background-color: #e93613;
+         }
+         &--green{
+            background-color: #42B883;
+         }
+         &--yellow{
+            background-color: #d1e913;
+         }
+      }
+
+   img{
+      opacity: 0.4;
+     }
+   }
+}
