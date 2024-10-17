@@ -2,6 +2,7 @@ import React from 'react';
 import List from './List/List';
 import './Sidebar.scss';
 import listSvg from '../assets/img/list.svg';
+import plusSvg from '../assets/img/plus.svg';
 
 const Sidebar = () => {
   return (
@@ -11,7 +12,8 @@ const Sidebar = () => {
           icon: listSvg,
           name: 'Все задачи'
         }
-      ]}/>
+      ]}
+      />
       <List items={[
         {
           color: "red",
@@ -25,6 +27,15 @@ const Sidebar = () => {
         {
           color: "yellow",
           name: 'Фильмы и сериалы'
+        }
+      ]}
+      isRemovable={true}
+      />
+      <List items={[
+        { 
+          className: "list__add-button",
+          icon: plusSvg,
+          name: 'Добавить папку'
         }
       ]}/>
     </div>

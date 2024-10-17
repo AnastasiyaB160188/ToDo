@@ -1,11 +1,21 @@
 .list{
    margin-bottom: 10px;
+
+   &__add-button{
+      opacity: 0.5;
+      &:hover{
+         opacity: 1;
+      }
+      
+   }
+
    li{
       display: flex;
       align-items: center;
       cursor: pointer;
       padding: 10px 12px;
 
+      
 
       &.active{
          background: #FFFFFF;
